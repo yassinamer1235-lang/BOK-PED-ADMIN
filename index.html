@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#070a10">
+
+    <title>BOK-PED</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGIN -->
+
+    <div id="loginSection" class="card">
+
+        <div class="logo">
+            BOK-PED
+        </div>
+
+        <h2>
+            تسجيل الدخول
+        </h2>
+
+        <p class="subtitle">
+            الدخول إلى لوحة فتح الحسابات
+        </p>
+
+
+        <div class="input-group">
+
+            <label>
+                البريد الإلكتروني
+            </label>
+
+            <input
+                id="adminEmail"
+                type="email"
+                value="website-reader@bok-ped.com"
+                placeholder="البريد الإلكتروني"
+                autocomplete="email"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                كلمة المرور
+            </label>
+
+            <input
+                id="adminPassword"
+                type="password"
+                placeholder="كلمة المرور"
+                autocomplete="current-password"
+            >
+
+        </div>
+
+
+        <button id="loginButton"
+                type="button">
+
+            تسجيل الدخول
+
+        </button>
+
+
+        <div id="loginMessage"
+             class="message">
+        </div>
+
+    </div>
+
+
+
+    <!-- ACCOUNT -->
+
+    <div id="accountSection"
+         class="card"
+         style="display:none;">
+
+        <div class="logo">
+            BOK-PED
+        </div>
+
+        <h2>
+            فتح حساب جديد
+        </h2>
+
+
+        <div class="input-group">
+
+            <label>
+                اسم العميل
+            </label>
+
+            <input
+                id="username"
+                type="text"
+                placeholder="اسم العميل"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                كلمة المرور
+            </label>
+
+            <input
+                id="password"
+                type="password"
+                placeholder="كلمة مرور الحساب"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                الاشتراك
+            </label>
+
+            <select id="subscription">
+
+                <option value="day">
+                    يوم واحد
+                </option>
+
+                <option value="week">
+                    أسبوع واحد
+                </option>
+
+                <option value="month">
+                    شهر واحد
+                </option>
+
+                <option value="3months">
+                    3 شهور
+                </option>
+
+                <option value="12months">
+                    12 شهر
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div id="subscriptionInfo"
+             class="subscription-info">
+        </div>
+
+
+        <button id="createAccount"
+                type="button">
+
+            فتح الحساب
+
+        </button>
+
+
+        <div id="message"
+             class="message">
+        </div>
+
+
+        <button id="logoutButton"
+                type="button"
+                class="secondary-button">
+
+            تسجيل الخروج
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script type="module" src="./app.js"></script>
+
+</body>
+</html>
